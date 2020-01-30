@@ -104,12 +104,14 @@ header input + div {
   left: 0;
   top: 0;
   background-color: rgba(19, 39, 57, 0.8);
+  width: 100vh;
 }
 header input + div .mobile-nav {
   margin-top: 0;
+  padding-top: 15px;
   background-color: rgba(19, 39, 57, 0.8);
   height: 100vh;
-  width: 40vh;
+  width: 30vh;
 }
 header input + div .mobile-nav li:nth-child(6) label {
   color: #ffffff;
