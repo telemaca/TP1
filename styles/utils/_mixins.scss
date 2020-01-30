@@ -1,0 +1,69 @@
+@mixin dropDown ($top-drop-down, $left-drop-down: null) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: $header-font-color;
+    font-family: $main-font;
+    font-size: 10px;
+    font-weight: 500;
+    background-color: #ffffff;
+    width: 200px;
+    box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: .3);
+    top: $top-drop-down;
+    left: $left-drop-down;
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+}
+
+@mixin mainContainer ($flex-direction: null) {
+    width: $main-max-width;
+    margin: auto;
+    display: flex;
+    flex-direction: $flex-direction;
+}
+
+@mixin homeBtn ($btn-font, $btn-font-weight, $btn-background, $btn-border) {
+    width: 170px;
+    height: 45px;
+    font-family: $btn-font;
+    font-weight: $btn-font-weight;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: $btn-background;
+    border: 1.5px solid $btn-border;
+    margin-right: 20px;
+    transition: .3s;
+}
+
+@mixin homeBtnHover ($btn-background, $btn-border) {
+    cursor: pointer;
+    background: $btn-background;
+    border: 1.5px solid $btn-border;
+}
+
+@mixin titleSubtitleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin sectionTitle ($section-title-color){
+    font-weight: 500;
+    font-size: 36px;
+    color: $section-title-color;
+    margin-bottom: 10px;
+}
+
+@mixin sectionSubtitle ($section-subtitle-color){
+    max-width: 550px;
+    font-size: 15px;
+    text-align: center;
+    color: $section-subtitle-color;
+    margin-bottom: 40px;
+
+    @media (max-width: 850px){
+        max-width: 450px;
+    }
+}

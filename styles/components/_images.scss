@@ -1,0 +1,147 @@
+.home-container{
+    img{
+        width: 50%;
+
+        @media (max-width: 1160px){
+            width: 70%;
+        }
+
+        @media (max-width: 780px){
+            width: 100%;
+        }
+    }
+}
+
+#about-us{
+    img{
+        width: 48%;
+
+        @media (max-width: 1160px){
+            width: 100%;
+        }
+    }
+}
+
+
+.portfolio-photo{
+    width: 325px;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+  
+
+
+    @for $i from 1 through 9{
+        &:nth-child(#{$i}){
+            background-image: url(../imgs/portfolio/#{$i}.jpg);
+        }        
+    }
+
+    @media (max-width: 850px){
+        width: 95%;
+    }
+}
+
+#team{
+
+    .member-photo{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        margin: 10px;
+
+        @media (max-width: 780px){
+            width: 350px;
+            height: 350px;
+        }
+
+        
+        @media (max-width: 520px){
+            width: 250px;
+            height: 250px;
+        }
+
+        @for $i from 1 through 4{
+            &:nth-child(#{$i}){
+                background-image: url(../imgs/team#{$i}.jpg);
+            }        
+        }
+
+        &:hover .member-info{
+            background: rgba($color: $blue-background, $alpha: .5);
+
+            h4,
+            p{
+                transform: translateY(0px);
+                color: #ffffff;
+            }
+
+            .social-network-container{
+                transform: translateY(0px);
+
+                i{
+                color: #ffffff;
+                }
+
+                i:hover{
+                    color: $light-blue-color;
+                }
+            }
+        }
+
+        .member-info{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: transparent;
+            background: transparent;
+            transition: .3s;
+
+            @media (max-width: 780px){
+                width: 350px;
+                height: 350px;
+            }
+
+            @media (max-width: 520px){
+                width: 250px;
+                height: 250px;
+            }
+
+            h4{
+                margin: 0;
+                font-size: 18px;
+                transition: .3s;
+                transform: translateY(50px);
+                
+            }
+
+            p{
+                margin: 0;
+                font-size: 13px;
+                font-style: italic;
+                transition: .3s;
+                transform: translateY(50px);
+
+            }
+        }
+    }
+}
+
+#clients{
+    img{
+        width: 50%;
+        transition: .3s;
+    }
+
+    .client:hover img{
+        transform: scale(1.2);
+    }
+}

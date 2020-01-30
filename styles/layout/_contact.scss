@@ -1,0 +1,127 @@
+.contact-container{
+    margin: auto;
+    width: 95%;
+}
+
+#contact{
+    width: 100%;
+    padding-bottom: 60px;
+    
+    .section-title-subtitle{
+    
+        h2{
+            @include sectionTitle (#283d50);
+        }
+    }
+
+    .contact-main{
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+
+        @media (max-width: 1160px){
+            flex-direction: column;
+        }
+
+        .column{
+            width: 50%;
+            padding: 0 30px;
+
+            @media (max-width: 1160px){
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .personal-info-wrapper{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                @media (max-width: 760px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .personal-info{
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            form{
+                width: 100%;
+
+                div{
+                    margin-bottom: 20px;
+                
+
+                    &:first-child{
+                        display: flex;
+                        width: 100%;
+
+                        @media (max-width: 760px){
+                            flex-direction: column;
+                        }
+
+
+                        .input{
+                            width: 50%;
+
+                            @media (max-width: 760px){
+                                width: 100%;
+                            }
+
+                            &:last-child{
+                                margin-left: 15px;
+
+                                @media (max-width: 760px){
+                                    margin-left: 0;;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                input{
+                    height: 30px;
+                    padding-left: 10px;
+                    font-family: $secondary-font;
+
+                    &:invalid:not(:placeholder-shown) ~ small{
+                        display: block;
+                    }
+                }
+
+                textarea{
+                    padding: 10px;
+                    font-family: $secondary-font;
+
+                    &:invalid:not(:placeholder-shown) ~ small{
+                        display: block;
+                    }
+                }
+
+                small{
+                    font-family: $secondary-font;
+                    color: #ff0000;
+                    display: none;
+                }
+            }
+
+            .input{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn-wrapper{
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
+    }
+}

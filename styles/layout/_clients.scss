@@ -1,0 +1,59 @@
+.clients-container{
+    @include mainContainer (column);
+
+    @media (max-width: 1160px){
+        max-width: 800px;
+    }
+
+    @media (max-width: 850px){
+        max-width: 80%;
+    }
+}
+
+#clients{
+    background-color: $extra-light-blue-color;
+    padding-bottom: 60px;
+    box-shadow: inset 0 0 20px 0 rgba($color: #000000, $alpha: .1);
+
+
+    .section-title-subtitle{
+
+        h2{
+            @include sectionTitle (#283d50);
+        }
+
+        p{
+            @include sectionSubtitle (#556877);
+        }
+    }
+
+    .clients-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (max-width: 850px){
+            flex-direction: column;
+        }
+
+        .client{
+            background-color: #ffffff;
+            box-sizing: border-box;
+            border: 1px solid $extra-light-blue-color;
+            max-width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+
+            @media (max-width: 1160px){
+                max-width: 50%;
+            }
+
+            @media (max-width: 850px){
+                max-width: 100%;
+            }
+        }
+    }
+}

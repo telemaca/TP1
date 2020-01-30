@@ -1,0 +1,108 @@
+.portfolio-container{
+    @include mainContainer (column);
+
+    @media (max-width: 1160px){
+        max-width: 750px;
+    }
+
+    @media (max-width: 850px){
+        max-width: 85%;
+    }
+}
+
+#portfolio{
+
+    padding-bottom: 60px;
+    
+    .section-title-subtitle{
+    
+        h2{
+            @include sectionTitle (#283d50);
+        }
+    }
+
+    .portfolio-filters{
+
+        margin: auto;
+
+        ul{
+            display: flex;
+            list-style: none;
+            font-family: $secondary-font;
+            padding: 0;
+
+            li{
+                margin: 20px;
+                padding: 8px 20px;
+                border-radius: 30px;
+                font-size: 13px;
+                color: $light-blue-color;
+                background-color: $extra-light-blue-color;
+                cursor: pointer;
+                transition: .3s;
+
+                @media (max-width: 780px){
+                    margin: 0 5px;
+                }
+
+                &:first-child{
+                    color: #ffffff;
+                    background-color: $light-blue-color;
+                }
+
+                &:hover{
+                    color: #ffffff;
+                    background-color: $light-blue-color;
+                }
+            }
+        }
+    }
+}
+
+.portfolio-photos-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 850px){
+        flex-direction: column;
+        align-items: center;
+    }
+   
+
+    .portfolio-info{
+        height: 100%;
+        color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: .3s;
+     
+    
+
+        &:hover {
+            display: flex;
+            background: rgba($color: $blue-background, $alpha: .5);
+            color: #ffffff;
+        }
+        
+    
+        h4{
+            font-size: 24px;
+            margin: 0;
+        }
+
+        h4:hover{
+            color: $light-blue-color;
+            cursor: pointer;
+        }
+    
+        p{
+            margin: 0;
+        }
+    }
+
+}

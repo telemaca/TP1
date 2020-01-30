@@ -1,0 +1,40 @@
+.get-started-btn{
+    @include homeBtn ($main-font, 700, #007bff, #007bff);
+
+    &:hover{
+        @include homeBtnHover (none, white);
+    }
+}
+
+.services-btn{
+    @include homeBtn ($main-font, 700, none, white);
+
+    &:hover{
+        @include homeBtnHover (#007bff, #007bff);
+    }
+
+    @media (max-width: 550px){
+        margin-top: 20px;
+    }
+}
+
+.submit-btn{
+    @include homeBtn ($secondary-font, 500, #007bff, #007bff);
+    font-size: 16px;
+    margin: auto;
+
+    &:hover{
+        background-color: #006ce0;
+        cursor: pointer;
+    }
+}
+
+footer{
+    .subscribe-btn{
+        height: 100%;
+        background-color: $light-blue-color;
+        border: none;
+        color: #ffffff;
+        font-family: $secondary-font;
+    }
+}

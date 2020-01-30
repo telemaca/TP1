@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    color: #444;
+}
+
+section{
+    padding-top: 70px;
+}
+
+h2,
+h3,
+h4,
+h5{
+    font-family: $main-font;
+}
+
+p{
+    font-family: $secondary-font;
+}
+
+.section-title-subtitle{
+    @include titleSubtitleWrapper;
+}
+
+
+#home{
+    background-color: $blue-background;
+    padding: 200px 70px 100px 70px;
+    display: flex;
+}
+
+.home-container{
+    @include mainContainer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1160px){
+        flex-direction: column-reverse;
+
+        div{
+            text-align: center;
+        }
+    }
+
+    h2{
+        font-family: $main-font;
+        font-size: 52px;
+        color: white;
+        margin-top: 20px;
+
+        @media (max-width: 780px){
+            font-size: 36px;
+        }
+
+        span{
+            color: #74b5fc;
+            text-decoration: underline;
+        }
+    }
+
+}
