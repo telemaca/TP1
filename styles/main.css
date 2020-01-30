@@ -618,6 +618,11 @@ a:hover {
     max-width: 650px;
   }
 }
+@media (max-width: 670px) {
+  .testimonials-container {
+    max-width: 410px;
+  }
+}
 
 #testimonials {
   padding-bottom: 100px;
@@ -634,6 +639,11 @@ a:hover {
 .testimonials-carrousel {
   width: 100%;
   height: 230px;
+}
+@media (max-width: 670px) {
+  .testimonials-carrousel {
+    height: 400px;
+  }
 }
 .testimonials-carrousel ul {
   list-style: none;
@@ -681,21 +691,51 @@ a:hover {
   left: 44%;
   bottom: -194px;
 }
+@media (max-width: 670px) {
+  .testimonials-carrousel ul .first-circle {
+    left: 35%;
+    bottom: -344px;
+  }
+}
 .testimonials-carrousel ul .second-circle {
   left: 47%;
   bottom: -150px;
+}
+@media (max-width: 670px) {
+  .testimonials-carrousel ul .second-circle {
+    left: 41%;
+    bottom: -300px;
+  }
 }
 .testimonials-carrousel ul .third-circle {
   left: 50%;
   bottom: -106px;
 }
+@media (max-width: 670px) {
+  .testimonials-carrousel ul .third-circle {
+    left: 47%;
+    bottom: -256px;
+  }
+}
 .testimonials-carrousel ul .fourth-circle {
   left: 53%;
   bottom: -62px;
 }
+@media (max-width: 670px) {
+  .testimonials-carrousel ul .fourth-circle {
+    left: 53%;
+    bottom: -212px;
+  }
+}
 .testimonials-carrousel ul .fifth-circle {
   left: 56%;
   bottom: -18px;
+}
+@media (max-width: 670px) {
+  .testimonials-carrousel ul .fifth-circle {
+    left: 59%;
+    bottom: -168px;
+  }
 }
 
 .testimonial {
@@ -703,6 +743,11 @@ a:hover {
   align-items: center;
   background-color: #ecf5ff;
   position: absolute;
+}
+@media (max-width: 670px) {
+  .testimonial {
+    flex-direction: column;
+  }
 }
 .testimonial .testimonial-photo {
   height: 120px;
@@ -718,6 +763,11 @@ a:hover {
 @media (max-width: 850px) {
   .testimonial .testimonial-text {
     max-width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 670px) {
+  .testimonial .testimonial-text {
     height: 200px;
   }
 }

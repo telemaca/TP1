@@ -9,6 +9,10 @@
     @media (max-width: 850px){
         max-width: 650px;
     }
+
+    @media (max-width: 670px){
+        max-width: 410px;
+    }
 }
 
 #testimonials{
@@ -28,6 +32,10 @@
 .testimonials-carrousel{
     width: 100%;
     height: 230px;
+
+    @media (max-width: 670px){
+        height: 400px;
+    }
 
     ul{
         list-style: none;
@@ -71,26 +79,51 @@
         .first-circle{
             left: 44%;
             bottom: -194px;
+
+            @media (max-width: 670px){
+                left: 35%;
+                bottom: -344px;
+            }
         }
 
         .second-circle{
             left: 47%;
             bottom: -150px;
+
+            @media (max-width: 670px){
+                left: 41%;
+                bottom: -300px;
+            }
         }
 
         .third-circle{
             left: 50%;
             bottom: -106px;
+
+            @media (max-width: 670px){
+                left: 47%;
+                bottom: -256px;
+            }
         }
 
         .fourth-circle{
             left: 53%;
             bottom: -62px;
+
+            @media (max-width: 670px){
+                left: 53%;
+                bottom: -212px;
+            }
         }
 
         .fifth-circle{
             left: 56%;
             bottom: -18px;
+
+            @media (max-width: 670px){
+                left: 59%;
+                bottom: -168px;
+            }
         }
     }
 }
@@ -100,6 +133,10 @@
     align-items: center;
     background-color: $extra-light-blue-color;
     position: absolute;
+
+    @media (max-width: 670px){
+        flex-direction: column;
+    }
 
     .testimonial-photo{
         height: 120px;
@@ -116,6 +153,10 @@
 
         @media (max-width: 850px){
             max-width: 400px;
+            height: 200px;
+        }
+
+        @media (max-width: 670px){
             height: 200px;
         }
 
